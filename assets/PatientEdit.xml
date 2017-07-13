@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<PatientEdit>
+    <Control name="PatientName" type="Edit" label="Patient Name" binding="PatientName" prompt="Patient Name" />    
+    <Control name="Status" type="Dropdown" label="Flag" binding="Flag">
+        <ListItem value="0" display="Not flagged" />            
+        <ListItem value="1" display="Flagged" />
+    </Control>
+    <Control name="Code" type="Edit" label="Code" binding="Code" prompt="Code" />    
+    <Control name="DOB" type="Date" label="Date of Birth" binding="DOB" prompt="Date of Birth" />
+    <Control name="Procedure" type="Edit" label="Procedure" binding="Procedure" prompt="Procedure" />    
+    <Control name="Procedure2" type="Edit" label="Procedure2" binding="Procedure2" prompt="Procedure2" />    
+    <Control name="Procedure3" type="Edit" label="Procedure3" binding="Procedure3" prompt="Procedure3" />    
+    <Control name="Outcome" type="Edit" label="Outcome" binding="Outcome" prompt="Outcome" />    
+    <Control name="Physician" type="Edit" label="Physician" binding="Physician" prompt="Physician" />    
+    <Control name="Reference" type="Edit" label="Reference" binding="Reference" prompt="Reference" />    
+    <Control name="ID1" type="ID1" label="Edit" binding="ID1" prompt="ID1" />
+    <Control name="ID2" type="ID2" label="Edit" binding="ID2" prompt="ID2" />    
+    <Control name="Notes" type="Notes" label="Edit" binding="Notes" prompt="Notes" />    
+</PatientEdit>

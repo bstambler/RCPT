@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+ 	android:orientation="vertical">
+ 	
+    <LinearLayout
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_gravity="right"
+ 	    android:orientation="horizontal">
+ 	     
+ 	<TextView android:layout_width="wrap_content"
+  		android:layout_height="wrap_content" 
+  		android:padding="10dp"
+  		android:text="@string/some_text"
+  		android:layout_weight="5"  		
+  		android:textSize="20sp" />
+ 	
+ 	<ProgressBar
+ 	    android:id="@+id/progressBar"
+ 	    android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:layout_gravity="right"
+  		android:padding="1dp"
+  		style="?android:attr/progressBarStyle"
+  		 />
+ 	</LinearLayout>
+
+ 	<LinearLayout
+ 	    android:layout_width="fill_parent" android:layout_height="wrap_content"
+ 	    android:orientation="horizontal">
+ 	    
+ 	    <ImageView
+ 	        android:contentDescription="@string/add_button"
+        	android:id="@+id/addButton"
+        	android:layout_width="60dp"
+        	android:layout_height="match_parent"
+        	android:adjustViewBounds="true"
+        	android:scaleType="fitCenter"
+        	android:clickable="true"
+			android:background="@android:color/transparent"
+        	android:src="@drawable/add_button2" />
+ 	    
+	    <ImageView
+ 	        android:contentDescription="@string/menu_button"
+        	android:id="@+id/menuButton"
+        	android:layout_width="60dp"
+        	android:layout_height="match_parent"
+        	android:adjustViewBounds="true"
+        	android:scaleType="fitCenter"
+        	android:clickable="true"
+			android:background="@android:color/transparent"
+        	android:src="@drawable/down_arrow3" />
+	    
+	    <ImageView
+ 	        android:contentDescription="@string/settings_button"
+        	android:id="@+id/settingButton"
+        	android:layout_width="60dp"
+        	android:layout_height="match_parent"
+        	android:adjustViewBounds="true"
+        	android:scaleType="fitCenter"
+        	android:clickable="true"
+			android:background="@android:color/transparent"
+        	android:src="@drawable/gear1" />
+	    
+	    	    		<!--Button
+        	android:id="@+id/menuSelectorButton"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/menu_button" /--> 	    
+ 	    
+	 	<!-- Spinner android:id="@+id/mySort"
+	      			android:layout_width="wrap_content"
+	      			android:layout_height="match_parent">
+	 	</Spinner-->	    
+	 	
+ 	  	<EditText android:id="@+id/myFilter" android:layout_width="match_parent"
+	  		android:layout_height="wrap_content"
+	  		android:singleLine="true"
+	  		android:ems="10"
+	  		android:hint="@string/some_hint"> 
+	 	</EditText>
+	 	
+ 	</LinearLayout>  
+ 
+ <ListView android:id="@+id/listViewPatients" 
+     android:layout_width="match_parent"
+  	android:layout_height="wrap_content" 
+  	android:choiceMode="singleChoice">
+
+ </ListView>
+ 
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="1dp"
+    android:id="@+id/tableRow1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     >
+
+	<TextView
+        android:padding="6dp"
+        android:id="@+id/textView1"
+        android:text="Column 1"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right|center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	<Spinner
+	    android:padding="6dp"
+        android:layout_marginRight="10dp"
+	    android:spinnerMode="dialog"
+        android:id="@+id/spinner"
+        android:drawSelectorOnTop="true"
+        android:layout_height="wrap_content"
+       	android:layout_width="0dp"
+        android:layout_weight="100"
+        android:imeOptions="actionNext"
+        android:gravity="left|center_vertical"
+        android:hint="Hello"           
+          />
+
+</TableRow>

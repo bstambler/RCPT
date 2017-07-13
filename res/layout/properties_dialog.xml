@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:paddingTop="0dp"
+    android:layout_marginTop="0dp"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+  <RelativeLayout
+    android:id="@+id/dialogButtons"
+    android:orientation="horizontal"
+    android:focusable="true"
+    android:layout_alignParentBottom="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+  	<Button
+        android:id="@+id/dialogButtonOK"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="@string/OK"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp" />
+  
+  	<Button
+        android:id="@+id/dialogButtonCancel"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+        android:text="@string/Cancel"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp" />
+   </RelativeLayout>
+
+  <ScrollView
+	android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_above = "@id/dialogButtons"
+    android:background="#000060"
+    android:id="@+id/maindlg">  
+    
+  	<TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"
+                android:shrinkColumns="*"
+                android:padding="1dp"
+                android:id="@+id/maintable">
+
+  	</TableLayout>  	
+  </ScrollView>  
+</RelativeLayout>
